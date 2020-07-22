@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "myautoversioning": {
+      "version": "1.0.3-beta",
+      "commands": [
+        "MyAutoVersioning"
+      ]
+    }
+  }
+}

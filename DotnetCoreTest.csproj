@@ -1,9 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
-
+  <PropertyGroup>
+    <PreBuildEvent>
+      echo "PhuTest...";
+      dotnet tool run MyAutoVersioning
+    </PreBuildEvent>
+    <PostBuildEvent>echo "PhuTest OK"</PostBuildEvent>
+  </PropertyGroup>
 
 </Project>
